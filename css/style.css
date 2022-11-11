@@ -1,0 +1,31 @@
+html, body{
+	margin: 0;
+	background-color: #d3e3d1;
+	color: #696969;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 10pt;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+#base{
+	position: relative;
+	left: 100px;
+	right: 100px;
+	height: 100%;
+	border-left: 1px solid 63875e;
+	border-right: 1px solid 63875e;
+	overflow: hidden;
+	z-index: 1;
+}
+
+/* create a vt_layer css which is inside base  */
+#vt_layer{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
