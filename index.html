@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" />
-  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+  crossorigin=""/>
+  
   <link rel="stylesheet" href="css/style.css">
-  <title>Leaflet map of USA</title>
+
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+ integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+ crossorigin=""></script>
+ <script type="text/javascript"  src="https://unpkg.com/leaflet.vectorgrid@1.2.0"></script>
+
+  <title>Document</title>
 </head>
-
 <body>
-  <div id="vt_layer">
-    <input type="checkbox" id="vt_layer_checkbox" checked="checked" />
-    <label for="vt_layer_checkbox">VT Layer</label>
-  </div>
-  <div id="base">
-   
-    
-  </div>
-
-
-
+  <button id="remove">Remove</button>
+  <div id="map"></div>
 </body>
-
-
-
 <script src="js/main.js"></script>
-<script type="text/javascript" src="https://unpkg.com/leaflet.vectorgrid@1.2.0"></script>
 <script src="js/vt_layer.js"></script>
 </html>
