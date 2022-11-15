@@ -91,4 +91,9 @@ document.getElementById("remove").onclick = function() {
 };
   
 
+build= L.easyButton('fa-home fa-lg', function(){
+  osmb = new OSMBuildings(map).load('https://{s}.data.osmbuildings.org/0.2/anonymous/tile/{z}/{x}/{y}.json'); 
+},"Show 2.5D Buildings",'topleft').addTo(map);
+
+
 }
